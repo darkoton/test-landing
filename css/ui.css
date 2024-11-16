@@ -58,14 +58,12 @@
   -webkit-align-items: center;
   -moz-box-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  -moz-column-gap: 12px;
-  column-gap: 12px;
 }
 
 .select-img {
   width: 100%;
   max-width: 22.5px;
+  margin-right: 12px;
 }
 
 .select-line {
@@ -104,13 +102,16 @@
   -moz-box-orient: vertical;
   -moz-box-direction: normal;
   flex-direction: column;
-  row-gap: 5px;
   opacity: 0;
   z-index: -1;
   -webkit-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   transition: all 0.1s ease;
+}
+
+.select-option:not(:first-child) {
+  margin-top: 5px;
 }
 
 .select.active .select-list {
@@ -137,13 +138,14 @@
   -webkit-align-items: center;
   -moz-box-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  -moz-column-gap: 12px;
-  column-gap: 12px;
   padding: 4px 8px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+}
+
+.select-option img {
+  margin-right: 12px;
 }
 
 @media (any-hover:hover) {

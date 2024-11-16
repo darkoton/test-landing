@@ -42,11 +42,12 @@
   display: -webkit-flex;
   display: -moz-box;
   display: flex;
-  -webkit-column-gap: 10px;
-  -moz-column-gap: 10px;
-  column-gap: 10px;
   z-index: 5;
   padding: 10px 12px;
+}
+
+.task-bottom__error svg {
+  margin-right: 10px;
 }
 
 .tasks__btn,
@@ -268,13 +269,13 @@
     -moz-box-pack: justify;
     justify-content: space-between;
     max-width: 100%;
-    gap: 8px;
   }
 
   .marketing-left__item {
     font-size: 16px;
     font-weight: 500;
     padding: 8px;
+    margin-right: 8px;
   }
 
   .marketing__desciption {
@@ -488,13 +489,16 @@
   }
 
   .marketing-left__items {
-    gap: 6px;
     padding: 8px;
   }
 
   .marketing-left__item {
     font-size: 12px;
     padding: 4px;
+  }
+
+  .marketing-left__item:not(:last-child) {
+    margin-right: 8px;
   }
 
   .marketing__desciption {
@@ -631,7 +635,7 @@
     margin-top: 20px;
   }
 
-  .footer__container .footer-root__container {
+  .footer .footer-root__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -649,8 +653,11 @@
     -webkit-justify-content: center;
     -moz-box-pack: center;
     justify-content: center;
-    gap: 12px;
     padding: 12px 0;
+  }
+
+  .footer-root__left {
+    margin-bottom: 12px;
   }
 
   .service-item-btn__left {
@@ -673,12 +680,12 @@
   }
 
   .service-item__service {
-    gap: 8px;
     font-size: 14px;
   }
 
   .service-item__service img {
     width: 24px;
+    margin-right: 8px;
   }
 
   .tasks-right__title {
@@ -752,7 +759,10 @@
   .tasks-quality__item {
     font-size: 12px;
     line-height: 16.8px;
-    gap: 8px;
+  }
+
+  .tasks-quality__item img {
+    margin-right: 8px;
   }
 
   .tasks-dropdown__btn {
@@ -764,12 +774,15 @@
     -moz-box-orient: vertical;
     -moz-box-direction: normal;
     flex-direction: column;
-    gap: 4px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
     -moz-box-align: start;
     align-items: flex-start;
+  }
+
+  .tasks-dropdown__btn span {
+    margin-right: 4px;
   }
 
   .tasks-dropdown__btn::after {
