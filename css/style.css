@@ -145,13 +145,14 @@
   }
 }
 
-.marketing-left__btn-wrap button:not(:last-child) {
-  margin-bottom: 10px;
+@media (max-width: 600px) {
+  .marketing-left__btn-wrap button:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
 }
 
-body {
-  background: #8adeff;
-}
+
 
 /* .marketing-left__btn-wrap br {
   display: none;

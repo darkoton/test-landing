@@ -114,7 +114,11 @@
   transition: 0.3s ease 0s;
   /*width: 123px;*/
   height: 48px;
-  /* padding-bottom: 0px; */
+  padding-bottom: 30px;
+}
+
+body {
+  background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjgybm1oeGt0cGs1cnFnN3pqOTUxbHo1eGRtdG1yY20yaDg5NGd1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NTur7XlVDUdqM/giphy.webp") no-repeat;
 }
 
 .header-item-btn.yt {
