@@ -120,6 +120,10 @@
   margin-top: 32px;
 }
 
+body {
+  background-color: rgb(107, 0, 0);
+}
+
 .marketing-left__btn-wrap {
   margin-top: 33px;
   display: -webkit-box;
@@ -127,9 +131,9 @@
   display: flex;
 
   @media (max-width: 600px) {
-    display: inline-block;
-    width: 100%;
-    margin-top: 10px;
+    display: inline-block !important;
+    width: 100% !important;
+    margin-top: 10px !important;
   }
 }
 
@@ -149,10 +153,10 @@
   margin-right: 10px;
 
   @media (max-width: 600px) {
-    display: block;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
+    display: block !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
   }
 }
 
