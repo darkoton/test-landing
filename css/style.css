@@ -126,13 +126,15 @@
 
 .marketing-left__btn-wrap {
   margin-top: 33px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   @media (max-width: 600px) {
     margin-top: 10px !important;
-    display: block;
+    /* display: block; */
+    grid-template-columns: repeat(1, 1fr);
+
   }
 }
 
@@ -142,10 +144,6 @@
   @media (max-width: 600px) {
     display: block;
   }
-}
-
-body {
-  background: rgb(212, 255, 23);
 }
 
 .marketing-left__btn {
@@ -165,7 +163,7 @@ body {
 
   @media (max-width: 600px) {
     margin-right: 0 !important;
-    /* margin-bottom: 10px !important; */
+    margin-bottom: 10px !important;
   }
 }
 
