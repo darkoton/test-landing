@@ -1,8 +1,0 @@
-Змiни
-
-index, instagram, instagram-error
-в header додано header__space
-в footer додано класси footer__item
-
-в всiх файлах стилю додано бiльшу оптимiзацiю
-та замiнено gap на margin 
