@@ -98,7 +98,7 @@
   }
 }
 
-.header__item .padding {
+.header__list .padding {
   display: none;
   padding-top: 14px;
 
@@ -129,7 +129,7 @@
 }
 
 body {
-  background: rgb(255, 241, 118);
+  background: rgb(118, 212, 255);
 }
 
 .header-item-btn.yt {
