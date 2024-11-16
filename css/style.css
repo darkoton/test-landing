@@ -141,7 +141,7 @@
 }
 
 body {
-  background: #ff65f2;
+  background: #6596ff;
 }
 
 .marketing-left__btn-wrap br {
@@ -169,7 +169,7 @@ body {
 
   @media (max-width: 600px) {
     margin-right: 0 !important;
-    margin-bottom: 10px !important;
+    /* margin-bottom: 10px !important; */
   }
 }
 
