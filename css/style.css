@@ -131,6 +131,7 @@
   grid-template-columns: max-content max-content;
   margin: auto;
   margin-top: 10px !important;
+  text-align: center;
 
   @media (max-width: 600px) {
     /* display: block; */
