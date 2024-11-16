@@ -82,12 +82,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 14px;
 }
 
 .header__item {
   position: relative;
   z-index: 3;
+  margin-right: 14px;
+
+  @media (max-width: 992px) {
+    margin-top: 14px;
+    margin-right: 0;
+  }
 }
 
 .header-item-btn {
