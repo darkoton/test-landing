@@ -26,9 +26,8 @@
 
 
 @media (max-width: 600px) {
-  .header__center {
+  .header__logo-body {
     width: 100%;
-    justify-content: end;
   }
 }
 
