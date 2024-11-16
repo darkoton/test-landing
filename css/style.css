@@ -128,7 +128,7 @@
 
   @media (max-width: 600px) {
     display: block;
-    margin: 0 auto;
+    text-align: center;
     margin-top: 10px;
   }
 }
@@ -149,8 +149,7 @@
   margin-right: 10px;
 
   @media (max-width: 600px) {
-    display: block;
-    margin: 0 auto;
+    margin-right: 0;
     margin-bottom: 10px;
   }
 }
