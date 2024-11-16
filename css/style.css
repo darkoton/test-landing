@@ -140,6 +140,10 @@
   }
 }
 
+body {
+  background: #ff65f2;
+}
+
 .marketing-left__btn-wrap br {
   display: none;
 
