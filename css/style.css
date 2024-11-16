@@ -127,7 +127,7 @@
   display: flex;
 
   @media (max-width: 600px) {
-    display: block;
+    display: inline-block;
     margin-top: 10px;
   }
 }
