@@ -145,8 +145,12 @@
   }
 }
 
+.marketing-left__btn-wrap button:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 body {
-  background: #ff8aef;
+  background: #8adeff;
 }
 
 /* .marketing-left__btn-wrap br {
