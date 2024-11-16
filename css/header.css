@@ -114,6 +114,7 @@
   transition: 0.3s ease 0s;
   /*width: 123px;*/
   height: 48px;
+  padding-bottom: 50px;
 }
 
 .header-item-btn.yt {
@@ -166,11 +167,14 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 12px;
   font-size: 14px;
   font-weight: 400;
   text-align: left;
 
+}
+
+.header-item-btn__left img {
+  margin-right: 12px;
 }
 
 .header-item-btn__right {
@@ -180,12 +184,15 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 4px;
   padding: 8px;
   border-radius: 100px;
   color: white;
   font-size: 14px;
   font-weight: 400;
+}
+
+.header-item-btn__right img {
+  margin-left: 4px;
 }
 
 .header-item-btn.active {
