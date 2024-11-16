@@ -140,17 +140,26 @@
   }
 }
 
-body {
-  background: #6596ff;
-}
-
-.marketing-left__btn-wrap br {
+.margin-transparent {
   display: none;
+  color: transparent;
 
   @media (max-width: 600px) {
     display: block;
   }
 }
+
+body {
+  background: #7a7a7a;
+}
+
+/* .marketing-left__btn-wrap br {
+  display: none;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+} */
 
 .marketing-left__btn {
   border-radius: 100px;
