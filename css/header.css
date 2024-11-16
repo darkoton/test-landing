@@ -101,9 +101,12 @@
 .header__list .padding {
   display: none;
   padding-top: 14px;
+  height: 40px;
+  margin-top: 20px;
 
   @media (max-width: 600px) {
     display: block;
+
   }
 }
 
@@ -129,7 +132,7 @@
 }
 
 body {
-  background: rgb(118, 212, 255);
+  background: rgb(223, 118, 255);
 }
 
 .header-item-btn.yt {
