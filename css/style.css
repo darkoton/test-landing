@@ -125,9 +125,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  gap: 10px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .marketing-left__btn {
@@ -143,6 +144,12 @@
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  margin-right: 10px;
+
+  @media (max-width: 600px) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
 }
 
 .marketing-left__btn.outlined {
