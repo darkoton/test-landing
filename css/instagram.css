@@ -73,16 +73,13 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 16px;
   padding: 8px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   color: black;
   border-radius: 6px;
-}
-
-.service-item__service img {
-  margin-right: 16px;
 }
 
 .service-item__service.active {
@@ -179,8 +176,6 @@
   align-items: center;
   gap: 12px;
   margin-right: 28px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .tasks-dropdown__price {
@@ -258,7 +253,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
 }
 
 .tasks-amount__left {
@@ -601,11 +596,6 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-
-  }
-
-  .tasks-amount__right {
-    margin-top: 16px;
   }
 
   .tasks-amount__left, .tasks-amount__right {

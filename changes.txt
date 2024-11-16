@@ -1,3 +1,0 @@
-index, instagram, instagram-error .html
-Строка 23-24 додано header__space
-Строка 638-705 в footer додано footer__item

@@ -17,6 +17,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 24px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -24,7 +25,6 @@
 
 .footer__logo {
   width: 57px;
-  margin-right: 24px;
 }
 
 .footer__decription {
@@ -40,13 +40,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 14px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.footer-social__item:not(:first-child) {
-  margin-left: 14px;
 }
 
 .footer__center {
@@ -62,7 +59,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -92,7 +91,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* Учитывает отступы и границы в ширине */
-  margin-top: 10px;
 }
 
 .footer-service__item:nth-child(4),
@@ -128,6 +126,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 18px;
   padding: 18px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -139,10 +138,6 @@
   color: rgba(8, 107, 254, 1);
   text-decoration: underline;
   background: white;
-}
-
-.footer-telegram__link img {
-  margin-right: 18px;
 }
 
 @media (any-hover:hover) {
@@ -232,10 +227,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .footer__item:not(:first-child) {
-    margin-top: 48px;
+    gap: 48px;
   }
 
   .footer__center {

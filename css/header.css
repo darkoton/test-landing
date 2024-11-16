@@ -26,16 +26,6 @@
 
 .header__nav {}
 
-.header__space {
-  display: none;
-}
-
-@media (max-width: 992px) {
-  .header__space {
-    display: block;
-    width: 100%;
-  }
-}
 
 .header-menu-service__btn {
   padding: 22.5px 24px;
@@ -67,7 +57,7 @@
   text-align: left;
   font-family: "Montserrat", sans-serif;
   position: relative;
-  white-space: nowrap;
+
 }
 
 .header-menu-service__btn span:before {
@@ -87,21 +77,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header__item:not(:first-child) {
-  margin-left: 14px;
+  gap: 14px;
 }
 
 .header__item {
   position: relative;
   z-index: 3;
-
-
-  @media (max-width: 992px) {
-    margin-top: 14px;
-    margin-left: 0;
-  }
 }
 
 .header-item-btn {
@@ -175,14 +156,11 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 12px;
   font-size: 14px;
   font-weight: 400;
   text-align: left;
 
-}
-
-.header-item-btn__left img {
-  margin-right: 12px;
 }
 
 .header-item-btn__right {
@@ -192,15 +170,12 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 4px;
   padding: 8px;
   border-radius: 100px;
   color: white;
   font-size: 14px;
   font-weight: 400;
-}
-
-.header-item-btn__right img {
-  margin-left: 4px;
 }
 
 .header-item-btn.active {
@@ -308,6 +283,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  gap: 8px;
   margin: 0 10px 0 18px;
 }
 
@@ -330,7 +306,6 @@
 }
 
 .header-right__btn-sign_up {
-  margin-top: 8px;
   width: 100%;
   border-radius: 100px;
   gap: 21px;
