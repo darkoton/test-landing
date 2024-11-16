@@ -128,12 +128,12 @@
   margin-top: 33px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: max-content max-content;
 
   @media (max-width: 600px) {
     margin-top: 10px !important;
     /* display: block; */
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: max-content;
 
   }
 }
