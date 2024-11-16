@@ -148,9 +148,9 @@
   margin-right: 10px;
 
   @media (max-width: 600px) {
+    display: block;
     margin-right: 0;
     margin-bottom: 10px;
-    transform: translateX(50%);
   }
 }
 
