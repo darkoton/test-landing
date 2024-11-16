@@ -78,22 +78,13 @@
   transform: translateY(-50%);
 }
 
-.header__list-body {
+.header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 
-  @media(max-width: 991.98px) {
-    -ms-flex-direction: column;
-    flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
   @media (max-width: 600px) {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block !important;
   }
 }
 
@@ -130,7 +121,7 @@
 }
 
 body {
-  background: rgb(255, 176, 72);
+  background: rgb(118, 255, 175);
 }
 
 .header-item-btn.yt {
