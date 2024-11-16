@@ -120,6 +120,10 @@
   margin-top: 32px;
 }
 
+.test {
+  width: 100%;
+}
+
 .marketing-left__btn-wrap {
   margin-top: 33px;
   display: -webkit-box;
@@ -141,7 +145,7 @@
 }
 
 body {
-  background: blue;
+  background: pink;
 }
 
 .marketing-left__btn {
