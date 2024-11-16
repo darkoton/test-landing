@@ -14,6 +14,16 @@
   width: 57px;
 }
 
+.header__space {
+  display: none;
+  width: 100%;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+}
+
+
 .header__center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +67,7 @@
   text-align: left;
   font-family: "Montserrat", sans-serif;
   position: relative;
-
+  white-space: nowrap;
 }
 
 .header-menu-service__btn span:before {
