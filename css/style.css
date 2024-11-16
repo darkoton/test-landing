@@ -129,9 +129,10 @@
   display: -ms-grid;
   display: grid;
   grid-template-columns: max-content max-content;
+  margin: auto;
+  margin-top: 10px !important;
 
   @media (max-width: 600px) {
-    margin-top: 10px !important;
     /* display: block; */
     grid-template-columns: max-content;
 
