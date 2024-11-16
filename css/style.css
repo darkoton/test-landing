@@ -145,7 +145,7 @@
 }
 
 body {
-  background: rgb(192, 255, 226);
+  background: rgb(212, 255, 23);
 }
 
 .marketing-left__btn {
@@ -164,7 +164,6 @@ body {
   margin-right: 10px;
 
   @media (max-width: 600px) {
-    display: block;
     margin-right: 0 !important;
     /* margin-bottom: 10px !important; */
   }
