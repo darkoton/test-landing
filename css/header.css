@@ -78,10 +78,23 @@
   transform: translateY(-50%);
 }
 
-.header__list {
+.header__list-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  @media(max-width: 991.98px) {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 .header__item {
@@ -114,11 +127,10 @@
   transition: 0.3s ease 0s;
   /*width: 123px;*/
   height: 48px;
-  padding-bottom: 30px;
 }
 
 body {
-  background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjgybm1oeGt0cGs1cnFnN3pqOTUxbHo1eGRtdG1yY20yaDg5NGd1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NTur7XlVDUdqM/giphy.webp") no-repeat;
+  background: rgb(255, 176, 72);
 }
 
 .header-item-btn.yt {
