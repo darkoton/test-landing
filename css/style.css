@@ -639,7 +639,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -651,6 +650,10 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-radius: 6px;
+}
+
+.service-item__service img {
+  margin-right: 16px;
 }
 
 .service-item__service:hover {
