@@ -24,12 +24,7 @@
   justify-content: space-between;
 }
 
-
-@media (max-width: 600px) {
-  .header__logo-body {
-    width: 100%;
-  }
-}
+.header__nav {}
 
 
 .header-menu-service__btn {
@@ -62,7 +57,7 @@
   text-align: left;
   font-family: "Montserrat", sans-serif;
   position: relative;
-  white-space: nowrap;
+
 }
 
 .header-menu-service__btn span:before {
@@ -79,25 +74,16 @@
 }
 
 .header__list {
-}
-
-.header__list tr{
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
 }
 
 .header__item {
   position: relative;
   z-index: 3;
-  padding-right: 14px;
-
-  @media (max-width: 992px) {
-    padding-right: 0;
-    padding-top: 14px;
-    display: block; 
-    width: 100%;
-  }
 }
-
 
 .header-item-btn {
   padding: 12px;
@@ -118,10 +104,6 @@
   transition: 0.3s ease 0s;
   /*width: 123px;*/
   height: 48px;
-}
-
-body {
-  background: rgb(129, 255, 118);
 }
 
 .header-item-btn.yt {
@@ -174,14 +156,11 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 12px;
   font-size: 14px;
   font-weight: 400;
   text-align: left;
 
-}
-
-.header-item-btn__left img {
-  margin-right: 12px;
 }
 
 .header-item-btn__right {
@@ -191,15 +170,12 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 4px;
   padding: 8px;
   border-radius: 100px;
   color: white;
   font-size: 14px;
   font-weight: 400;
-}
-
-.header-item-btn__right img {
-  margin-left: 4px;
 }
 
 .header-item-btn.active {
