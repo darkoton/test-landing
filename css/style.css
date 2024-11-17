@@ -583,11 +583,11 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 12px;
 }
 
 .service-item-btn__left img {
   width: 44px;
+  margin-right: 12px;
 }
 
 .service-item-btn__right {
@@ -721,7 +721,7 @@
     -ms-flex-align: center;
     align-items: center;
     max-width: 100%;
-    padding: 8px;
+    padding: 4px;
   }
 
   .marketing-left__item {
@@ -898,7 +898,7 @@
 
   .marketing-left__items {
     gap: 6px;
-    padding: 8px;
+    padding: 5px;
   }
 
   .marketing-left__item {
