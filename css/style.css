@@ -512,8 +512,22 @@
   position: relative;
 }
 
-.service__item:not(:first-child) {
+.service__item:nth-child(1), .service__item:nth-child(3) {
+  margin-right: 16px;
+}
+
+.service__item:nth-child(3), .service__item:nth-child(4) {
   margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .service__item {
+    margin-right: 0 !important;
+  }
+
+  .service__item:not(:first-child) {
+    margin-top: 16px;
+  }
 }
 
 .service-item-btn {
