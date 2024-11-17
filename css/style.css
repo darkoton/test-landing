@@ -77,6 +77,7 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  gap: 14px;
   /* max-width: 437px;
   width: 100%; */
   margin-top: 64px;
@@ -88,10 +89,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 17.07px;
-}
-
-.marketing-left__item:not(:first-child) {
-  margin-left: 14px;
 }
 
 .marketing-left__item.red {
@@ -130,6 +127,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .marketing-left__btn {
@@ -150,7 +148,6 @@
 .marketing-left__btn.outlined {
   color: rgba(237, 79, 93, 1);
   background: transparent;
-  margin-left: 10px;
 }
 
 .marketing-left__btn:hover {
@@ -175,6 +172,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  gap: 15px;
 }
 
 .marketing-rigth__item {
@@ -188,9 +186,6 @@
   overflow: hidden;
 }
 
-.marketing-rigth__item:not(:first-child) {
-  margin-top: 15px;
-}
 
 .marketing-rigth__item.blue {
   background: rgba(14, 164, 228, 0.2);
@@ -205,19 +200,19 @@
 }
 
 /* @media not all and (min-resolution: 0.001dpcm) and (min-device-pixel-ratio: 3) {
-  @supports (-webkit-touch-callout: none) {
-    .marketing-rigth__item.blue {
-      background: rgba(203, 222, 250, 0.85);
-    }
-
-    .marketing-rigth__item.purple {
-      background: rgba(243, 195, 245, 0.85);
-    }
-
-    .marketing-rigth__item.yellow {
-      background: rgba(250, 229, 204, 0.85);
-    }
+@supports (-webkit-touch-callout: none) {
+  .marketing-rigth__item.blue {
+    background: rgba(203, 222, 250, 0.85);
   }
+  
+  .marketing-rigth__item.purple {
+    background: rgba(243, 195, 245, 0.85);
+  }
+  
+  .marketing-rigth__item.yellow {
+    background: rgba(250, 229, 204, 0.85);
+  }
+}
 } */
 
 .marketing-right-item__top {
@@ -227,13 +222,13 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 17px;
   font-size: 32px;
   font-weight: 700;
   line-height: 39.01px;
 }
 
 .marketing-right-item__top img {
-  margin-right: 17px;
   border-radius: 12px;
   padding: 8px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -276,8 +271,6 @@
 }
 
 @media(max-width: 991.98px) {
-
-
   .marketing-section {
     padding: 48px 0;
   }
@@ -365,33 +358,7 @@
   }
 }
 
-@supports not ((-webkit-backdrop-filter: blur(32px)) or (backdrop-filter: blur(32px))) {
-  .marketing-rigth__item.blue {
-    background: rgba(14, 164, 228, 0.8);
-  }
-
-  .marketing-rigth__item.purple {
-    background: rgba(216, 43, 203, 0.8);
-  }
-
-  .marketing-rigth__item.yellow {
-    background: rgba(255, 214, 0, 0.8);
-  }
-}
-
 @media(max-width: 767.98px) {}
-
-@media(max-width: 601.98px) {
-  .marketing-left__btn-wrap {
-    flex-direction: column;
-  }
-
-  .marketing-left__btn.outlined {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-}
-
 
 /* ADVANTAGES SECTION */
 
@@ -503,6 +470,7 @@
   display: grid;
   -ms-grid-columns: 1fr 16px 1fr;
   grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -510,10 +478,6 @@
 
 .service__item {
   position: relative;
-}
-
-.service__item:not(:first-child) {
-  margin-top: 16px;
 }
 
 .service-item-btn {
@@ -597,11 +561,11 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 12px;
 }
 
 .service-item-btn__left img {
   width: 44px;
-  margin-right: 12px;
 }
 
 .service-item-btn__right {
@@ -653,6 +617,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 16px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -664,10 +629,6 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-radius: 6px;
-}
-
-.service-item__service img {
-  margin-right: 16px;
 }
 
 .service-item__service:hover {
@@ -738,17 +699,14 @@
     -ms-flex-align: center;
     align-items: center;
     max-width: 100%;
-    padding: 4px;
+    gap: 8px;
+    padding: 8px;
   }
 
   .marketing-left__item {
     font-size: 16px;
     font-weight: 500;
     padding: 8px;
-  }
-
-  .marketing-left__item:not(:first-child) {
-    margin-left: 8px;
   }
 
   .marketing__desciption {
@@ -915,7 +873,7 @@
 
   .marketing-left__items {
     gap: 6px;
-    padding: 5px;
+    padding: 8px;
   }
 
   .marketing-left__item {
