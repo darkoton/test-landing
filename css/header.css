@@ -86,7 +86,7 @@
 }
 
 .header-item-btn {
-  padding: 7px;
+  padding: 0 12px;
   border-radius: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,6 +103,7 @@
   -o-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
   /*width: 123px;*/
+  height: 48px;
 }
 
 .header-item-btn.yt {
