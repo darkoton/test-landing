@@ -355,7 +355,7 @@
   .marketing-rigth__item.purple {
     -webkit-backdrop-filter: blur(32px);
     backdrop-filter: blur(32px);
-    background: rgba(255, 255, 255, 0.3), rgba(216, 43, 203, 0.2);
+    background: rgba(216, 43, 203, 0.2);
   }
 
   .marketing-rigth__item.yellow {
@@ -367,15 +367,15 @@
 
 @supports not ((-webkit-backdrop-filter: blur(32px)) or (backdrop-filter: blur(32px))) {
   .marketing-rigth__item.blue {
-    background: rgba(14, 164, 228, 0.8);
+    background: rgba(14, 164, 228, 0.6);
   }
 
   .marketing-rigth__item.purple {
-    background: rgba(216, 43, 203, 0.8);
+    background: rgba(216, 43, 203, 0.6);
   }
 
   .marketing-rigth__item.yellow {
-    background: rgba(255, 214, 0, 0.8);
+    background: rgba(255, 214, 0, 0.6);
   }
 }
 
