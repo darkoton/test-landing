@@ -7,11 +7,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 54px;
 }
 
 .header__logo img {
   width: 57px;
+  margin-right: 54px;
 }
 
 .header__center {
@@ -57,7 +57,7 @@
   text-align: left;
   font-family: "Montserrat", sans-serif;
   position: relative;
-
+  white-space: nowrap;
 }
 
 .header-menu-service__btn span:before {
@@ -77,16 +77,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 14px;
 }
 
 .header__item {
   position: relative;
   z-index: 3;
+  margin-right: 14px;
 }
 
 .header-item-btn {
-  padding: 12px;
+  padding: 0 12px;
   border-radius: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,11 +156,13 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 12px;
   font-size: 14px;
   font-weight: 400;
   text-align: left;
+}
 
+.header-item-btn__left img {
+  margin-right: 12px;
 }
 
 .header-item-btn__right {
@@ -170,12 +172,15 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 4px;
   padding: 8px;
   border-radius: 100px;
   color: white;
   font-size: 14px;
   font-weight: 400;
+}
+
+.header-item-btn__right img {
+  margin-left: 4px;
 }
 
 .header-item-btn.active {
@@ -215,7 +220,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -227,6 +231,10 @@
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   border-radius: 6px;
+}
+
+.header-item__service img {
+  margin-right: 16px;
 }
 
 .header-item__service:hover {
@@ -283,7 +291,6 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 8px;
   margin: 0 10px 0 18px;
 }
 
@@ -303,6 +310,7 @@
   font-weight: 700;
   color: white;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .header-right__btn-sign_up {
@@ -437,7 +445,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 12px;
   font-size: 14px;
   font-weight: 500;
   padding: 12px;
@@ -447,6 +454,11 @@
   -webkit-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.06);
   text-decoration: underline;
+  min-height: 48px;
+}
+
+.header-right__telegram img {
+  margin-right: 12px;
 }
 
 @media(min-width: 991.98px) {
@@ -460,6 +472,14 @@
 }
 
 @media(max-width: 991.98px) {
+
+  .header__item {
+    margin-right: 0;
+    margin-top: 14px;
+  }
+
+
+
   .header-item-btn {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
