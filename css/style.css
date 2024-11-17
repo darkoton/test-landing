@@ -367,15 +367,15 @@
 
 @supports not ((-webkit-backdrop-filter: blur(32px)) or (backdrop-filter: blur(32px))) {
   .marketing-rigth__item.blue {
-    background: rgba(14, 164, 228, 0.35);
+    background: rgba(14, 164, 228, 0.3);
   }
 
   .marketing-rigth__item.purple {
-    background: rgba(255, 255, 255, 0.35), rgba(216, 43, 203, 0.35);
+    background: rgba(255, 255, 255, 0.3), rgba(216, 43, 203, 0.3);
   }
 
   .marketing-rigth__item.yellow {
-    background: rgba(255, 214, 0, 0.35);
+    background: rgba(255, 214, 0, 0.3);
   }
 }
 
