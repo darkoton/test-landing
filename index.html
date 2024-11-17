@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/ui.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/steps-section.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/globals.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/ui.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/steps-section.css">
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo-body">
+            <a href="./index.html" class="header__logo">
+              <img src="./assets/header/logo.svg" alt="Logotype" />
+            </a>
+          </div>
+          <div class="header__center">
+            <nav class="header__nav">
+              <button class="header-menu-service__btn">
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.3335 4.66667H11.6668M3.3335 10.5H16.6668M3.3335 16.3333H16.6668"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
 
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__container">
-        <div class="header__logo-body">
-          <a href="./index.html" class="header__logo">
-            <img src="./assets/header/logo.svg" alt="Logotype">
-          </a>
-        </div>
-        <div class="header__center">
-          <nav class="header__nav">
-            <button class="header-menu-service__btn">
-              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.3335 4.66667H11.6668M3.3335 10.5H16.6668M3.3335 16.3333H16.6668" stroke="white"
-                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-
-              <span>
-                Каталог послуг
-              </span>
-            </button>
-            <ul class="header__list">
+                <span> Каталог послуг </span>
+              </button>
+              <!-- <ul class="header__list">
               <div class="header-list__top">
                 <div class="header-list__title">
                   Каталог послуг
@@ -192,581 +200,933 @@
                   </a>
                 </div>
               </li>
+            </ul> -->
+              <div class="header__list">
+                <table>
+                  <tr>
+                    <td class="header-list__top">
+                      <div class="header-list__title">Каталог послуг</div>
+                      <img
+                        src="./assets/header/close.svg"
+                        alt="Close icon"
+                        class="header-list__close"
+                      />
+                    </td>
+                    <td class="header__item">
+                      <button class="header-item-btn inst">
+                        <div class="header-item-btn__left">
+                          <img
+                            src="./assets/header/inst.svg"
+                            alt="Instagram Icon"
+                          />
+                          Інстаграм
+                        </div>
+                        <div class="header-item-btn__right">
+                          Послуги
+                          <img src="./assets/header/arrow.svg" alt="Arrow" />
+                        </div>
+                      </button>
+                      <div class="header-item__content">
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/follower.svg"
+                            alt="Follower Icon"
+                          />
+                          Підписники
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/likes.svg"
+                            alt="Likes Icon"
+                          />
+                          Лайки
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/view.svg"
+                            alt="View Icon"
+                          />
+                          Перегляди
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/stories.svg"
+                            alt="Stories Icon"
+                          />
+                          Сторіси
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/comment.svg"
+                            alt="Comment Icon"
+                          />
+                          Коментарі
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/report.svg"
+                            alt="Report Icon"
+                          />
+                          Скарги
+                        </a>
+                      </div>
+                    </td>
+                    <td class="header__item">
+                      <button class="header-item-btn tt">
+                        <div class="header-item-btn__left">
+                          <img
+                            src="./assets/header/tik-tok.svg"
+                            alt="Tik Tok Icon"
+                          />
+                          Tik Tok
+                        </div>
+                        <div class="header-item-btn__right">
+                          Послуги
+                          <img src="./assets/header/arrow.svg" alt="Arrow" />
+                        </div>
+                      </button>
+                      <div class="header-item__content">
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/follower.svg"
+                            alt="Follower Icon"
+                          />
+                          Підписники
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/likes.svg"
+                            alt="Likes Icon"
+                          />
+                          Лайки
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/view.svg"
+                            alt="View Icon"
+                          />
+                          Перегляди
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/stories.svg"
+                            alt="Stories Icon"
+                          />
+                          Сторіси
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/comment.svg"
+                            alt="Comment Icon"
+                          />
+                          Коментарі
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/report.svg"
+                            alt="Report Icon"
+                          />
+                          Скарги
+                        </a>
+                      </div>
+                    </td>
+                    <td class="header__item">
+                      <button class="header-item-btn telegram">
+                        <div class="header-item-btn__left">
+                          <img
+                            src="./assets/header/telegram.svg"
+                            alt="Telegram Icon"
+                          />
+                          Телеграм
+                        </div>
+                        <div class="header-item-btn__right">
+                          Послуги
+                          <img src="./assets/header/arrow.svg" alt="Arrow" />
+                        </div>
+                      </button>
+                      <div class="header-item__content">
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/follower.svg"
+                            alt="Follower Icon"
+                          />
+                          Підписники
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/likes.svg"
+                            alt="Likes Icon"
+                          />
+                          Лайки
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/view.svg"
+                            alt="View Icon"
+                          />
+                          Перегляди
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/stories.svg"
+                            alt="Stories Icon"
+                          />
+                          Сторіси
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/comment.svg"
+                            alt="Comment Icon"
+                          />
+                          Коментарі
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/report.svg"
+                            alt="Report Icon"
+                          />
+                          Скарги
+                        </a>
+                      </div>
+                    </td>
+                    <td class="header__item">
+                      <button class="header-item-btn yt">
+                        <div class="header-item-btn__left">
+                          <img
+                            src="./assets/header/yt.svg"
+                            alt="Youtube Icon"
+                          />
+                          Ютуб
+                        </div>
+                        <div class="header-item-btn__right">
+                          Послуги
+                          <img src="./assets/header/arrow.svg" alt="Arrow" />
+                        </div>
+                      </button>
+                      <div class="header-item__content">
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/follower.svg"
+                            alt="Follower Icon"
+                          />
+                          Підписники
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/likes.svg"
+                            alt="Likes Icon"
+                          />
+                          Лайки
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/view.svg"
+                            alt="View Icon"
+                          />
+                          Перегляди
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/stories.svg"
+                            alt="Stories Icon"
+                          />
+                          Сторіси
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/comment.svg"
+                            alt="Comment Icon"
+                          />
+                          Коментарі
+                        </a>
+                        <a href="" class="header-item__service">
+                          <img
+                            src="./assets/header/icons-inst/report.svg"
+                            alt="Report Icon"
+                          />
+                          Скарги
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </nav>
+            <div class="background-black"></div>
+            <div class="header-btn-wrap">
+              <button class="header-right__btn">Увійти</button>
+              <div class="header-right-menu">
+                <button class="header-right__btn-mobile">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.9998 13.3333C18.9454 13.3333 21.3332 10.9455 21.3332 8.00001C21.3332 5.05449 18.9454 2.66667 15.9998 2.66667C13.0543 2.66667 10.6665 5.05449 10.6665 8.00001C10.6665 10.9455 13.0543 13.3333 15.9998 13.3333Z"
+                      fill="#0EA4E4"
+                    />
+                    <path
+                      opacity="0.5"
+                      d="M26.6668 23.3333C26.6668 26.6467 26.6668 29.3333 16.0002 29.3333C5.3335 29.3333 5.3335 26.6467 5.3335 23.3333C5.3335 20.02 10.1095 17.3333 16.0002 17.3333C21.8908 17.3333 26.6668 20.02 26.6668 23.3333Z"
+                      fill="#0EA4E4"
+                    />
+                  </svg>
+                </button>
+                <div class="header-right__content">
+                  <div class="header-right-top">
+                    <div class="header-list__top account">
+                      <div class="header-list__title">Аккаунт</div>
+                      <img
+                        src="./assets/header/close.svg"
+                        alt="Close icon"
+                        class="header-profile__close"
+                      />
+                    </div>
+                    <div class="header-right__btn-wrap">
+                      <button class="header-right__btn-sign_in">Увійти</button>
+                      <button class="header-right__btn-sign_up">
+                        Реєстрація
+                      </button>
+                    </div>
+                    <div class="header__switch-lang">
+                      <button class="switch-lang__btn">
+                        <div class="lang-btn__left">
+                          <img src="./assets/header/uk.svg" alt="" />
+                          <span>Українська</span>
+                        </div>
+                        <img
+                          src="./assets/header/arrow-profile.svg"
+                          alt="Arrow Icon"
+                        />
+                      </button>
+                    </div>
+                    <div class="header__accordion">
+                      <div class="accordion__item">
+                        <button class="accordion__header">
+                          Для клієнтів
+                          <img src="./assets/header/arrow-profile.svg" alt="" />
+                        </button>
+                        <div class="accordion__content">
+                          <a href="" class="accordion-link">Компанія</a>
+                          <a href="" class="accordion-link">Компанія</a>
+                          <a href="" class="accordion-link">Компанія</a>
+                        </div>
+                      </div>
+                      <div class="accordion__item">
+                        <button class="accordion__header">
+                          Компанія
+                          <img src="./assets/header/arrow-profile.svg" alt="" />
+                        </button>
+                        <div class="accordion__content">
+                          <a href="" class="accordion-link">Компанія</a>
+                          <a href="" class="accordion-link">Компанія</a>
+                          <a href="" class="accordion-link">Компанія</a>
+                        </div>
+                      </div>
+                      <div class="accordion__item">
+                        <button class="accordion__header">
+                          Для партнерів
+                          <img src="./assets/header/arrow-profile.svg" alt="" />
+                        </button>
+                        <div class="accordion__content">
+                          <a href="" class="accordion-link">Компанія</a>
+                          <a href="" class="accordion-link">Компанія</a>
+                          <a href="" class="accordion-link">Компанія</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="" class="header-right__telegram">
+                    <img
+                      src="./assets/header/telegram-profile.svg"
+                      alt="Telegram Icon"
+                    />
+                    Напишіть нам в Telegram
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="marketing-section">
+          <img
+            src="./assets/marketing/blur-1.png"
+            alt=""
+            class="marketing__blur marketing__blur-1"
+          />
+          <img
+            src="./assets/marketing/blur-2.png"
+            alt=""
+            class="marketing__blur marketing__blur-2"
+          />
+          <div class="marketing__container">
+            <div class="marketing-content">
+              <div class="marketing__left">
+                <h1 class="marketing__title">
+                  <span> Українська </span>
+                  Маркетингова платформа
+                </h1>
+                <div class="marketing-left__items">
+                  <div class="marketing-left__item red">Лайки</div>
+                  <div class="marketing-left__item purple">Перегляди</div>
+                  <div class="marketing-left__item yellow">Підписники</div>
+                  <div class="marketing-left__item green">та інше</div>
+                </div>
+                <p class="marketing__desciption">
+                  <span class="strong"
+                    >9000+ Відгуків з 2018 року під фото в Instagram
+                    @smm.fxa</span
+                  >
+                  Швидке замовлення без реєстрації. Кращі ціни та якість по
+                  Україні
+                </p>
+                <div class="marketing-left__btn-wrap">
+                  <button class="marketing-left__btn">Почати</button>
+                  <div class="margin-transparent"></div>
+                  <button class="marketing-left__btn outlined">Відгуки</button>
+                </div>
+              </div>
+              <img
+                src="./assets/marketing/person.png"
+                alt=""
+                class="person-img"
+              />
+              <div class="marketing__right">
+                <div class="marketing-right__items">
+                  <div class="marketing-rigth__item blue">
+                    <div class="marketing-right-item__top">
+                      <img src="./assets/marketing/01.svg" alt="" />
+                      <h3>1 643 256</h3>
+                    </div>
+                    <p class="marketing-right-item__bottom">
+                      завершено замовлень
+                    </p>
+                  </div>
+                  <div class="marketing-rigth__item purple">
+                    <div class="marketing-right-item__top">
+                      <img src="./assets/marketing/02.svg" alt="" />
+                      <h3>52 268</h3>
+                    </div>
+                    <p class="marketing-right-item__bottom">постйні клієнти</p>
+                  </div>
+                  <div class="marketing-rigth__item yellow">
+                    <div class="marketing-right-item__top">
+                      <img src="./assets/marketing/03.svg" alt="" />
+                      <h3>99%</h3>
+                    </div>
+                    <p class="marketing-right-item__bottom">
+                      позитивних відгуків
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantages-section">
+          <div class="advantages__container">
+            <h2 class="advantages__title">Чому ми?</h2>
+            <div class="advantages__items">
+              <div class="advantages__item">
+                <img src="./assets/advantages/01.svg" alt="" />
+                <h3 class="advantages-item__title">ЯКІСТЬ ПОСЛУГ</h3>
+                <p class="advantages-item__sub-title">
+                  Ми уважно перевіряємо усі послуги перш ніж запропонувати їх
+                  вам. Тестуємо та знаходимо нові оптимальні рішення для того,
+                  щоб просування з нашим сервісом було на висоті
+                </p>
+              </div>
+              <div class="advantages__item">
+                <img src="./assets/advantages/02.svg" alt="" />
+                <h3 class="advantages-item__title">ПОСТІЙНИЙ РОЗВИТОК</h3>
+                <p class="advantages-item__sub-title">
+                  Ми активно стежимо за трендами у просуванні та розробляємо
+                  свої послуги таким чином, щоб ви отримували реальний результат
+                </p>
+              </div>
+              <div class="advantages__item">
+                <img src="./assets/advantages/03.svg" alt="" />
+                <h3 class="advantages-item__title">КОНФІДЕНЦІЙНІСТЬ</h3>
+                <p class="advantages-item__sub-title">
+                  За всю історію ми не зрадили довіру жодного нашого клієнта,
+                  замовляючи у нас ви можете бути впевнені, що будь-яка
+                  інформація надана нам, буде у безпеці
+                </p>
+              </div>
+              <div class="advantages__item">
+                <img src="./assets/advantages/04.svg" alt="" />
+                <h3 class="advantages-item__title">РЕКОМЕНДАЦІЯ</h3>
+                <p class="advantages-item__sub-title">
+                  Що зробити, щоб відео потрапило в топ Тік Ток? Створіть
+                  привабливий обліковий запис та приділіть увагу оригінальності
+                  та високій якості контенту, використовуйте хештеги, музику і
+                  еффекти.
+                </p>
+              </div>
+              <div class="advantages__item">
+                <img src="./assets/advantages/05.svg" alt="" />
+                <h3 class="advantages-item__title">Оберіть потрібну послугу</h3>
+                <p class="advantages-item__sub-title">
+                  Ми можемо запропонувати цілий комплекс послуг для просування
+                  вашої сторінки соц. мережі
+                </p>
+              </div>
+              <div class="advantages__item">
+                <img src="./assets/advantages/06.svg" alt="" />
+                <h3 class="advantages-item__title">Як зробити замовлення</h3>
+                <p class="advantages-item__sub-title">
+                  <span class="strong">3 простих кроки.</span>
+                </p>
+                <p class="advantages-item__sub-title">
+                  1. Оберіть потрібну послугу.
+                </p>
+                <p class="advantages-item__sub-title">
+                  2. Ми можемо запропонувати цілий комплекс послуг для
+                  просування вашої сторінки соц. мережі.
+                </p>
+                <p class="advantages-item__sub-title">3. Заповніть дані.</p>
+                <p class="advantages-item__sub-title">
+                  4. Після вибору послуги ви на сторінку де вкажіть корректне
+                  посилання на сторінку чи публікацію у соц. мережі.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-steps">
+          <div class="steps__container">
+            <div class="steps-top">
+              <h1 class="steps__title">Лише кiлька крокiв до популярностi</h1>
+              <div class="steps-text-right">
+                <p class="steps__description">
+                  Люди потребують вашого контенту.
+                </p>
+                <p class="steps__description">
+                  Усього кiлька крокiв i ваш профiль або пости почнуть набирати
+                  популярнiсть.
+                </p>
+                <p class="steps__description bold">Швидко та надiйно.</p>
+              </div>
+            </div>
+            <div class="steps__bottom">
+              <div class="steps__items">
+                <div class="steps__item">
+                  <div class="step-number green">01</div>
+                  <div class="step-content">
+                    <img src="./assets/steps/01.svg" alt="" />
+                    <h3 class="steps-item__title">Виберiть послугу</h3>
+                    <p class="steps-item__description">
+                      Виберiть послугу, виходячи з бюджету. Можете спробувати
+                      кiлька i запунитися на тому, що бiльшо смподобаеться.
+                    </p>
+                  </div>
+                </div>
+                <div class="steps__item">
+                  <div class="step-number orange">02</div>
+                  <div class="step-content">
+                    <img src="./assets/steps/02.svg" alt="" />
+                    <h3 class="steps-item__title">Заповнiть iнформацiю</h3>
+                    <p class="steps-item__description">
+                      Не потрiбно вводити пароль. Вкажiть лише посилання на
+                      об’эект i пошту пiд час оформлення замовлення.
+                    </p>
+                  </div>
+                </div>
+                <div class="steps__item">
+                  <div class="step-number purple">03</div>
+                  <div class="step-content">
+                    <img src="./assets/steps/03.svg" alt="" />
+                    <h3 class="steps-item__title">Слiдкуйте за ростом</h3>
+                    <p class="steps-item__description">
+                      Пiсля оплати всi замовлення починають виконовуватися
+                      протягом декиiлькох хвилин, тому шо швидко побачите
+                      зростання вашого аккаунта
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="service-section">
+          <div class="service__container">
+            <h1 class="service__title">Каталог послуги</h1>
+            <div class="service__items">
+              <div class="service__item">
+                <button class="service-item-btn inst">
+                  <div class="service-item-btn__left">
+                    <img src="./assets/header/inst.svg" alt="Instagram Icon" />
+                    Інстаграм
+                  </div>
+                  <div class="service-item-btn__right">
+                    Послуги <img src="./assets/header/arrow.svg" alt="Arrow" />
+                  </div>
+                </button>
+                <div class="service-item__content">
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/follower.svg"
+                      alt="Follower Icon"
+                    />
+                    Підписники
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/likes.svg"
+                      alt="Likes Icon"
+                    />
+                    Лайки
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/view.svg"
+                      alt="View Icon"
+                    />
+                    Перегляди
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/stories.svg"
+                      alt="Stories Icon"
+                    />
+                    Сторіси
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/comment.svg"
+                      alt="Comment Icon"
+                    />
+                    Коментарі
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/report.svg"
+                      alt="Report Icon"
+                    />
+                    Скарги
+                  </a>
+                </div>
+              </div>
+              <div class="service__item">
+                <button class="service-item-btn tt">
+                  <div class="service-item-btn__left">
+                    <img src="./assets/header/tik-tok.svg" alt="Tik Tok Icon" />
+                    Tik Tok
+                  </div>
+                  <div class="service-item-btn__right">
+                    Послуги <img src="./assets/header/arrow.svg" alt="Arrow" />
+                  </div>
+                </button>
+                <div class="service-item__content">
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/follower.svg"
+                      alt="Follower Icon"
+                    />
+                    Підписники
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/likes.svg"
+                      alt="Likes Icon"
+                    />
+                    Лайки
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/view.svg"
+                      alt="View Icon"
+                    />
+                    Перегляди
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/stories.svg"
+                      alt="Stories Icon"
+                    />
+                    Сторіси
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/comment.svg"
+                      alt="Comment Icon"
+                    />
+                    Коментарі
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/report.svg"
+                      alt="Report Icon"
+                    />
+                    Скарги
+                  </a>
+                </div>
+              </div>
+              <div class="service__item">
+                <button class="service-item-btn telegram">
+                  <div class="service-item-btn__left">
+                    <img
+                      src="./assets/header/telegram.svg"
+                      alt="Telegram Icon"
+                    />
+                    Телеграм
+                  </div>
+                  <div class="service-item-btn__right">
+                    Послуги <img src="./assets/header/arrow.svg" alt="Arrow" />
+                  </div>
+                </button>
+                <div class="service-item__content">
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/follower.svg"
+                      alt="Follower Icon"
+                    />
+                    Підписники
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/likes.svg"
+                      alt="Likes Icon"
+                    />
+                    Лайки
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/view.svg"
+                      alt="View Icon"
+                    />
+                    Перегляди
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/stories.svg"
+                      alt="Stories Icon"
+                    />
+                    Сторіси
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/comment.svg"
+                      alt="Comment Icon"
+                    />
+                    Коментарі
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/report.svg"
+                      alt="Report Icon"
+                    />
+                    Скарги
+                  </a>
+                </div>
+              </div>
+              <div class="service__item">
+                <button class="service-item-btn yt">
+                  <div class="service-item-btn__left">
+                    <img src="./assets/header/yt.svg" alt="Youtube Icon" />
+                    Ютуб
+                  </div>
+                  <div class="service-item-btn__right">
+                    Послуги <img src="./assets/header/arrow.svg" alt="Arrow" />
+                  </div>
+                </button>
+                <div class="service-item__content">
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/follower.svg"
+                      alt="Follower Icon"
+                    />
+                    Підписники
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/likes.svg"
+                      alt="Likes Icon"
+                    />
+                    Лайки
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/view.svg"
+                      alt="View Icon"
+                    />
+                    Перегляди
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/stories.svg"
+                      alt="Stories Icon"
+                    />
+                    Сторіси
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/comment.svg"
+                      alt="Comment Icon"
+                    />
+                    Коментарі
+                  </a>
+                  <a href="" class="service-item__service">
+                    <img
+                      src="./assets/header/icons-inst/report.svg"
+                      alt="Report Icon"
+                    />
+                    Скарги
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__left footer__item">
+            <div class="footer__top">
+              <a href="" class="footer__logo">
+                <img src="./assets/header/logo.svg" alt="" />
+              </a>
+              <p class="footer__decription">
+                Заснована в 2017 році, наша компанія є відомою у всьому світі
+                завдяки своїм послугам. Ми надаємо оперативну та надійну
+                підтримку клієнтам і вдячні за довіру, яку вони нам надають.
+              </p>
+            </div>
+            <ul class="footer-list__social">
+              <li class="footer-social__item">
+                <a href="" class="footer-social__link">
+                  <img src="./assets/footer/inst.svg" alt="" />
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="" class="footer-social__link">
+                  <img src="./assets/footer/tt.svg" alt="" />
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="" class="footer-social__link">
+                  <img src="./assets/footer/telegram.svg" alt="" />
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="" class="footer-social__link">
+                  <img src="./assets/footer/yt.svg" alt="" />
+                </a>
+              </li>
             </ul>
-          </nav>
-          <div class="background-black"></div>
-          <div class="header-btn-wrap">
-            <button class="header-right__btn">
-              Увійти
-            </button>
-            <div class="header-right-menu">
-              <button class="header-right__btn-mobile">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.9998 13.3333C18.9454 13.3333 21.3332 10.9455 21.3332 8.00001C21.3332 5.05449 18.9454 2.66667 15.9998 2.66667C13.0543 2.66667 10.6665 5.05449 10.6665 8.00001C10.6665 10.9455 13.0543 13.3333 15.9998 13.3333Z"
-                    fill="#0EA4E4" />
-                  <path opacity="0.5"
-                    d="M26.6668 23.3333C26.6668 26.6467 26.6668 29.3333 16.0002 29.3333C5.3335 29.3333 5.3335 26.6467 5.3335 23.3333C5.3335 20.02 10.1095 17.3333 16.0002 17.3333C21.8908 17.3333 26.6668 20.02 26.6668 23.3333Z"
-                    fill="#0EA4E4" />
-                </svg>
+          </div>
+          <div class="footer__center footer__item">
+            <ul class="footer-service__list">
+              <div class="footer-service__title">Послуги</div>
+              <li class="footer-service__item">
+                <a href="" class="footer-service__link"> для ТікТок </a>
+              </li>
+              <li class="footer-service__item">
+                <a href="" class="footer-service__link"> FAQ </a>
+              </li>
+              <li class="footer-service__item">
+                <a href="" class="footer-service__link"> для Телеграму </a>
+              </li>
+              <li class="footer-service__item">
+                <a href="" class="footer-service__link"> Відгуки </a>
+              </li>
+              <li class="footer-service__item">
+                <a href="" class="footer-service__link"> для Інстаграму </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer-contacts__list footer__item">
+            <div class="footer-service__title footer-contacts__title">
+              Контакти
+            </div>
+            <li class="footer-service__item">
+              <a href="" class="footer-telegram__link">
+                <img src="./assets/header/telegram-profile.svg" alt="" />
+                Напишіть нам в Telegram
+              </a>
+            </li>
+            <li class="footer__languages">
+              <div class="select">
+                <div class="select-top">
+                  <div class="select-value">
+                    <img
+                      class="select-img"
+                      alt="UA"
+                      src="./assets/global/ua.png"
+                    />
+                    <i class="select-line"></i>
+                    <span class="select-text">Українська</span>
+                  </div>
+                  <svg
+                    class="select-icon"
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.99287 0.919997C0.915264 0.997407 0.853693 1.08937 0.811682 1.19061C0.769671 1.29185 0.748047 1.40039 0.748047 1.51C0.748047 1.61961 0.769671 1.72815 0.811682 1.82939C0.853693 1.93063 0.915264 2.02259 0.99287 2.1L6.53287 7.64C6.59455 7.7018 6.66781 7.75083 6.74845 7.78429C6.8291 7.81774 6.91556 7.83496 7.00287 7.83496C7.09018 7.83496 7.17664 7.81774 7.25729 7.78429C7.33793 7.75083 7.41119 7.7018 7.47287 7.64L13.0129 2.1C13.3395 1.77333 13.3395 1.24666 13.0129 0.919997C12.6862 0.59333 12.1595 0.59333 11.8329 0.919997L6.99954 5.74666L2.1662 0.913332C1.8462 0.593332 1.31287 0.593331 0.99287 0.919997Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
 
-              </button>
-              <div class="header-right__content">
-                <div class="header-right-top">
-                  <div class="header-list__top account">
-                    <div class="header-list__title">
-                      Аккаунт
-                    </div>
-                    <img src="./assets/header/close.svg" alt="Close icon" class="header-profile__close">
-                  </div>
-                  <div class="header-right__btn-wrap">
-                    <button class="header-right__btn-sign_in">Увійти</button>
-                    <button class="header-right__btn-sign_up">Реєстрація</button>
-                  </div>
-                  <div class="header__switch-lang">
-                    <button class="switch-lang__btn">
-                      <div class="lang-btn__left">
-                        <img src="./assets/header/uk.svg" alt=""> <span>Українська</span>
-                      </div>
-                      <img src="./assets/header/arrow-profile.svg" alt="Arrow Icon">
-                    </button>
-                  </div>
-                  <div class="header__accordion">
-                    <div class="accordion__item">
-                      <button class="accordion__header">Для клієнтів <img src="./assets/header/arrow-profile.svg"
-                          alt=""></button>
-                      <div class="accordion__content">
-                        <a href="" class="accordion-link">Компанія</a>
-                        <a href="" class="accordion-link">Компанія</a>
-                        <a href="" class="accordion-link">Компанія</a>
-                      </div>
-                    </div>
-                    <div class="accordion__item">
-                      <button class="accordion__header">Компанія <img src="./assets/header/arrow-profile.svg"
-                          alt=""></button>
-                      <div class="accordion__content">
-                        <a href="" class="accordion-link">Компанія</a>
-                        <a href="" class="accordion-link">Компанія</a>
-                        <a href="" class="accordion-link">Компанія</a>
-                      </div>
-                    </div>
-                    <div class="accordion__item">
-                      <button class="accordion__header">Для партнерів <img src="./assets/header/arrow-profile.svg"
-                          alt=""></button>
-                      <div class="accordion__content">
-                        <a href="" class="accordion-link">Компанія</a>
-                        <a href="" class="accordion-link">Компанія</a>
-                        <a href="" class="accordion-link">Компанія</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="" class="header-right__telegram">
-                  <img src="./assets/header/telegram-profile.svg" alt="Telegram Icon">
-                  Напишіть нам в Telegram
-                </a>
+                <ul class="select-list">
+                  <li class="select-option">
+                    <img
+                      src="./assets/global/ua.png"
+                      alt="UA"
+                      class="select-option-img"
+                    />
+                    <span class="select-option-text">Українська</span>
+                  </li>
+                  <li class="select-option">
+                    <img
+                      src="./assets/global/ua.png"
+                      alt="UA"
+                      class="select-option-img"
+                    />
+                    <span class="select-option-text">Українська 2</span>
+                  </li>
+                  <li class="select-option">
+                    <img
+                      src="./assets/global/ua.png"
+                      alt="UA"
+                      class="select-option-img"
+                    />
+                    <span class="select-option-text">Українська 3</span>
+                  </li>
+                  <li class="select-option">
+                    <img
+                      src="./assets/global/ua.png"
+                      alt="UA"
+                      class="select-option-img"
+                    />
+                    <span class="select-option-text">Українська 4</span>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
-      </div>
-    </header>
-    <main class="page">
-      <section class="marketing-section">
-        <img src="./assets/marketing/blur-1.png" alt="" class="marketing__blur marketing__blur-1">
-        <img src="./assets/marketing/blur-2.png" alt="" class="marketing__blur marketing__blur-2">
-        <div class="marketing__container">
-          <div class="marketing-content">
-            <div class="marketing__left">
-              <h1 class="marketing__title">
-                <span>
-                  Українська
-                </span>
-                Маркетингова платформа
-              </h1>
-              <div class="marketing-left__items">
-                <div class="marketing-left__item red">
-                  Лайки
-                </div>
-                <div class="marketing-left__item purple">
-                  Перегляди
-                </div>
-                <div class="marketing-left__item yellow">
-                  Підписники
-                </div>
-                <div class="marketing-left__item green">
-                  та інше
-                </div>
-              </div>
-              <p class="marketing__desciption">
-                <span class="strong">9000+ Відгуків з 2018 року під фото в Instagram @smm.fxa</span> Швидке замовлення
-                без реєстрації. Кращі ціни та якість по Україні
-              </p>
-              <div class="marketing-left__btn-wrap">
-                <button class="marketing-left__btn">Почати</button>
-                <div class="margin-transparent"></div>
-                <button class="marketing-left__btn outlined">Відгуки</button>
-              </div>
-            </div>
-            <img src="./assets/marketing/person.png" alt="" class="person-img">
-            <div class="marketing__right">
-              <div class="marketing-right__items">
-                <div class="marketing-rigth__item blue">
-                  <div class="marketing-right-item__top">
-                    <img src="./assets/marketing/01.svg" alt="">
-                    <h3>1 643 256</h3>
-                  </div>
-                  <p class="marketing-right-item__bottom">
-                    завершено замовлень
-                  </p>
-                </div>
-                <div class="marketing-rigth__item purple">
-                  <div class="marketing-right-item__top">
-                    <img src="./assets/marketing/02.svg" alt="">
-                    <h3>52 268</h3>
-                  </div>
-                  <p class="marketing-right-item__bottom">
-                    постйні клієнти
-                  </p>
-                </div>
-                <div class="marketing-rigth__item yellow">
-                  <div class="marketing-right-item__top">
-                    <img src="./assets/marketing/03.svg" alt="">
-                    <h3>99%</h3>
-                  </div>
-                  <p class="marketing-right-item__bottom">
-                    позитивних відгуків
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="advantages-section">
-        <div class="advantages__container">
-          <h2 class="advantages__title">
-            Чому ми?
-          </h2>
-          <div class="advantages__items">
-            <div class="advantages__item">
-              <img src="./assets/advantages/01.svg" alt="">
-              <h3 class="advantages-item__title">
-                ЯКІСТЬ ПОСЛУГ
-              </h3>
-              <p class="advantages-item__sub-title">
-                Ми уважно перевіряємо усі послуги
-                перш ніж запропонувати їх вам.
-                Тестуємо та знаходимо нові
-                оптимальні рішення для того, щоб просування з нашим сервісом було
-                на
-                висоті
-              </p>
-            </div>
-            <div class="advantages__item">
-              <img src="./assets/advantages/02.svg" alt="">
-              <h3 class="advantages-item__title">
-                ПОСТІЙНИЙ РОЗВИТОК
-              </h3>
-              <p class="advantages-item__sub-title">
-                Ми активно стежимо за трендами у
-                просуванні та розробляємо свої
-                послуги таким чином, щоб ви
-                отримували реальний результат
-              </p>
-            </div>
-            <div class="advantages__item">
-              <img src="./assets/advantages/03.svg" alt="">
-              <h3 class="advantages-item__title">КОНФІДЕНЦІЙНІСТЬ</h3>
-              <p class="advantages-item__sub-title">
-                За всю історію ми не зрадили довіру
-                жодного нашого клієнта, замовляючи
-                у нас ви можете бути впевнені, що
-                будь-яка інформація надана нам,
-                буде у безпеці
-              </p>
-            </div>
-            <div class="advantages__item">
-              <img src="./assets/advantages/04.svg" alt="">
-              <h3 class="advantages-item__title">РЕКОМЕНДАЦІЯ</h3>
-              <p class="advantages-item__sub-title">
-                Що зробити, щоб відео потрапило в
-                топ Тік Ток? Створіть привабливий обліковий запис та приділіть увагу оригінальності та
-                високій якості контенту, використовуйте хештеги, музику і еффекти.
-              </p>
-            </div>
-            <div class="advantages__item">
-              <img src="./assets/advantages/05.svg" alt="">
-              <h3 class="advantages-item__title">Оберіть потрібну послугу</h3>
-              <p class="advantages-item__sub-title">
-                Ми можемо запропонувати цілий
-                комплекс послуг для просування вашої
-                сторінки соц. мережі
-              </p>
-            </div>
-            <div class="advantages__item">
-              <img src="./assets/advantages/06.svg" alt="">
-              <h3 class="advantages-item__title">Як зробити замовлення</h3>
-              <p class="advantages-item__sub-title"><span class="strong">3 простих кроки.</span></p>
-              <p class="advantages-item__sub-title">1. Оберіть потрібну послугу.</p>
-              <p class="advantages-item__sub-title">2. Ми можемо запропонувати цілий комплекс послуг для
-                просування вашої сторінки соц. мережі.</p>
-              <p class="advantages-item__sub-title">3. Заповніть дані.</p>
-              <p class="advantages-item__sub-title">4. Після вибору послуги ви на сторінку де вкажіть
-                корректне посилання на сторінку чи публікацію у соц. мережі.</p>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-steps">
-        <div class="steps__container">
-          <div class="steps-top">
-            <h1 class="steps__title">
-              Лише кiлька крокiв
-              до популярностi
-            </h1>
-            <div class="steps-text-right">
-              <p class="steps__description">
-                Люди потребують вашого контенту.
-              </p>
-              <p class="steps__description">
-                Усього кiлька крокiв i ваш профiль або пости почнуть набирати популярнiсть.
-              </p>
-              <p class="steps__description bold">
-                Швидко та надiйно.
-              </p>
-            </div>
-          </div>
-          <div class="steps__bottom">
-            <div class="steps__items">
-              <div class="steps__item">
-                <div class="step-number green">01</div>
-                <div class="step-content">
-                  <img src="./assets/steps/01.svg" alt="">
-                  <h3 class="steps-item__title">Виберiть послугу</h3>
-                  <p class="steps-item__description">
-                    Виберiть послугу, виходячи з бюджету.
-                    Можете спробувати кiлька i запунитися на
-                    тому, що бiльшо смподобаеться.
-                  </p>
-                </div>
-              </div>
-              <div class="steps__item">
-                <div class="step-number orange">02</div>
-                <div class="step-content">
-                  <img src="./assets/steps/02.svg" alt="">
-                  <h3 class="steps-item__title">Заповнiть iнформацiю</h3>
-                  <p class="steps-item__description">
-                    Не потрiбно вводити пароль. Вкажiть лише
-                    посилання на об’эект i пошту пiд час
-                    оформлення замовлення.
-                  </p>
-                </div>
-              </div>
-              <div class="steps__item">
-                <div class="step-number purple">03</div>
-                <div class="step-content">
-                  <img src="./assets/steps/03.svg" alt="">
-                  <h3 class="steps-item__title">Слiдкуйте за ростом</h3>
-                  <p class="steps-item__description">
-                    Пiсля оплати всi замовлення починають
-                    виконовуватися протягом декиiлькох хвилин,
-                    тому шо швидко побачите зростання вашого
-                    аккаунта
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="service-section">
-        <div class="service__container">
-          <h1 class="service__title">Каталог послуги</h1>
-          <div class="service__items">
-            <div class="service__item">
-              <button class="service-item-btn inst">
-                <div class="service-item-btn__left">
-                  <img src="./assets/header/inst.svg" alt="Instagram Icon">
-                  Інстаграм
-                </div>
-                <div class="service-item-btn__right">
-                  Послуги <img src="./assets/header/arrow.svg" alt="Arrow">
-                </div>
-              </button>
-              <div class="service-item__content">
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/follower.svg" alt="Follower Icon">
-                  Підписники
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/likes.svg" alt="Likes Icon">
-                  Лайки
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/view.svg" alt="View Icon">
-                  Перегляди
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/stories.svg" alt="Stories Icon">
-                  Сторіси
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/comment.svg" alt="Comment Icon">
-                  Коментарі
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/report.svg" alt="Report Icon">
-                  Скарги
-                </a>
-              </div>
-            </div>
-            <div class="service__item">
-              <button class="service-item-btn tt">
-                <div class="service-item-btn__left">
-                  <img src="./assets/header/tik-tok.svg" alt="Tik Tok Icon">
-                  Tik Tok
-                </div>
-                <div class="service-item-btn__right">
-                  Послуги <img src="./assets/header/arrow.svg" alt="Arrow">
-                </div>
-              </button>
-              <div class="service-item__content">
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/follower.svg" alt="Follower Icon">
-                  Підписники
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/likes.svg" alt="Likes Icon">
-                  Лайки
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/view.svg" alt="View Icon">
-                  Перегляди
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/stories.svg" alt="Stories Icon">
-                  Сторіси
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/comment.svg" alt="Comment Icon">
-                  Коментарі
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/report.svg" alt="Report Icon">
-                  Скарги
-                </a>
-              </div>
-            </div>
-            <div class="service__item">
-              <button class="service-item-btn telegram">
-                <div class="service-item-btn__left">
-                  <img src="./assets/header/telegram.svg" alt="Telegram Icon">
-                  Телеграм
-                </div>
-                <div class="service-item-btn__right">
-                  Послуги <img src="./assets/header/arrow.svg" alt="Arrow">
-                </div>
-              </button>
-              <div class="service-item__content">
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/follower.svg" alt="Follower Icon">
-                  Підписники
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/likes.svg" alt="Likes Icon">
-                  Лайки
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/view.svg" alt="View Icon">
-                  Перегляди
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/stories.svg" alt="Stories Icon">
-                  Сторіси
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/comment.svg" alt="Comment Icon">
-                  Коментарі
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/report.svg" alt="Report Icon">
-                  Скарги
-                </a>
-              </div>
-            </div>
-            <div class="service__item">
-              <button class="service-item-btn yt">
-                <div class="service-item-btn__left">
-                  <img src="./assets/header/yt.svg" alt="Youtube Icon">
-                  Ютуб
-                </div>
-                <div class="service-item-btn__right">
-                  Послуги <img src="./assets/header/arrow.svg" alt="Arrow">
-                </div>
-              </button>
-              <div class="service-item__content">
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/follower.svg" alt="Follower Icon">
-                  Підписники
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/likes.svg" alt="Likes Icon">
-                  Лайки
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/view.svg" alt="View Icon">
-                  Перегляди
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/stories.svg" alt="Stories Icon">
-                  Сторіси
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/comment.svg" alt="Comment Icon">
-                  Коментарі
-                </a>
-                <a href="" class="service-item__service">
-                  <img src="./assets/header/icons-inst/report.svg" alt="Report Icon">
-                  Скарги
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__left footer__item">
-          <div class="footer__top">
-            <a href="" class="footer__logo">
-              <img src="./assets/header/logo.svg" alt="">
-            </a>
-            <p class="footer__decription">
-              Заснована в 2017 році, наша компанія є відомою у всьому світі завдяки своїм
-              послугам. Ми надаємо оперативну та надійну підтримку клієнтам і вдячні за довіру, яку вони
-              нам
-              надають.
+        <div class="footer-root">
+          <div class="footer-root__container">
+            <p class="footer-root__left">
+              © 2024 Company Name | All rights reserved
             </p>
-          </div>
-          <ul class="footer-list__social">
-            <li class="footer-social__item">
-              <a href="" class="footer-social__link">
-                <img src="./assets/footer/inst.svg" alt="">
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a href="" class="footer-social__link">
-                <img src="./assets/footer/tt.svg" alt="">
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a href="" class="footer-social__link">
-                <img src="./assets/footer/telegram.svg" alt="">
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a href="" class="footer-social__link">
-                <img src="./assets/footer/yt.svg" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__center footer__item">
-          <ul class="footer-service__list">
-            <div class="footer-service__title">
-              Послуги
-            </div>
-            <li class="footer-service__item">
-              <a href="" class="footer-service__link">
-                для ТікТок
-              </a>
-            </li>
-            <li class="footer-service__item">
-              <a href="" class="footer-service__link">
-                FAQ
-              </a>
-            </li>
-            <li class="footer-service__item">
-              <a href="" class="footer-service__link">
-                для Телеграму
-              </a>
-            </li>
-            <li class="footer-service__item">
-              <a href="" class="footer-service__link">
-                Відгуки
-              </a>
-            </li>
-            <li class="footer-service__item">
-              <a href="" class="footer-service__link">
-                для Інстаграму
-              </a>
-            </li>
-          </ul>
-        </div>
-        <ul class="footer-contacts__list footer__item">
-          <div class="footer-service__title footer-contacts__title">
-            Контакти
-          </div>
-          <li class="footer-service__item">
-            <a href="" class="footer-telegram__link">
-              <img src="./assets/header/telegram-profile.svg" alt=""> Напишіть нам в Telegram
+            <a href="" class="footer-root__right">
+              Політика конфіденційності
             </a>
-          </li>
-          <li class="footer__languages">
-            <div class="select">
-              <div class="select-top">
-                <div class="select-value">
-                  <img class="select-img" alt="UA" src="./assets/global/ua.png" />
-                  <i class="select-line"></i>
-                  <span class="select-text">Українська</span>
-                </div>
-                <svg class="select-icon" width="14" height="8" viewBox="0 0 14 8" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.99287 0.919997C0.915264 0.997407 0.853693 1.08937 0.811682 1.19061C0.769671 1.29185 0.748047 1.40039 0.748047 1.51C0.748047 1.61961 0.769671 1.72815 0.811682 1.82939C0.853693 1.93063 0.915264 2.02259 0.99287 2.1L6.53287 7.64C6.59455 7.7018 6.66781 7.75083 6.74845 7.78429C6.8291 7.81774 6.91556 7.83496 7.00287 7.83496C7.09018 7.83496 7.17664 7.81774 7.25729 7.78429C7.33793 7.75083 7.41119 7.7018 7.47287 7.64L13.0129 2.1C13.3395 1.77333 13.3395 1.24666 13.0129 0.919997C12.6862 0.59333 12.1595 0.59333 11.8329 0.919997L6.99954 5.74666L2.1662 0.913332C1.8462 0.593332 1.31287 0.593331 0.99287 0.919997Z"
-                    fill="black" />
-                </svg>
-              </div>
-
-              <ul class="select-list">
-                <li class="select-option">
-                  <img src="./assets/global/ua.png" alt="UA" class="select-option-img">
-                  <span class="select-option-text">Українська</span>
-                </li>
-                <li class="select-option">
-                  <img src="./assets/global/ua.png" alt="UA" class="select-option-img">
-                  <span class="select-option-text">Українська 2</span>
-                </li>
-                <li class="select-option">
-                  <img src="./assets/global/ua.png" alt="UA" class="select-option-img">
-                  <span class="select-option-text">Українська 3</span>
-                </li>
-                <li class="select-option">
-                  <img src="./assets/global/ua.png" alt="UA" class="select-option-img">
-                  <span class="select-option-text">Українська 4</span>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-root">
-        <div class="footer-root__container">
-          <p class="footer-root__left">
-            © 2024 Company Name | All rights reserved
-          </p>
-          <a href="" class="footer-root__right">
-            Політика конфіденційності
-          </a>
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  <script src="./js/script.js"></script>
-</body>
-
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
